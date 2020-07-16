@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #f8ffde;
+    
+}
+.container{
+    position:sticky;
+    top:0px;
+}
+#nav{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 6 auto;
+}
+/* navigation section */
+#nav-area{
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    background-color: rgb(39, 181, 236);
+    align-items: center;
+   
+
+}
+
+#nav-area ul{
+   
+    display: flex;
+    list-style: none;
+    margin:0 auto;
+    padding: 0;
+    flex: 4;
+
+}
+#nav-area ul li{
+    margin-right: 1em;
+    line-height: 30px;
+}
+#nav-area ul li a{
+    font-weight: bold;
+    text-decoration: none;
+  
+    padding: 20px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#nav-area ul li a:hover{
+    color:black;
+}
+/* logo section */
+#logo{
+    margin: 6px 29px;
+    
+}
+#logo img{
+    height: 50px;
+    margin: 3px 6px;
+    
+}
+#logo-c{
+    margin: 6px 29px;
+}
+#logo-c img{
+    
+    height: 100px;
+    animation: gocorona 5s linear infinite;
+}
+@keyframes gocorona{
+ 0%
+ {
+     transform: scale(.75);
+ }
+ 20%
+ {
+     transform: scale(1);
+ }
+ 40%{
+     transform: scale(.75);
+ }
+ 60%{
+     transform: scale(1);
+ }
+ 80%{
+     transform: scale(.75);
+ }
+ 100%{
+     transform: scale(.75);
+ }
+}
+#data-section{
+  
+}
+.main1{
+    background-color:#f8ffde;
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+   z-index: -1;
+    padding-top: 72px;
+    display: flex;
+    /* margin: 0px auto; */
+    align-items: center;
+    justify-content: center;
+}
+
+.main1 p{
+    text-align: center;
+}
+#box1{
+    display: flex;
+}
+#box2{
+    display: flex;
+}
+#box1 li{
+   
+    font-size: 16px;
+    border-radius: 16px;
+    
+    margin: 22px;
+    list-style: none;
+    height: 100px;
+    width: 150px;
+}
+#box2 li{
+    
+    font-size: 16px;
+    border-radius: 16px;
+    
+    margin: 22px;
+    list-style: none;
+    height: 100px;
+    width: 150px;
+}
+#box1 img{
+    animation: goocorona 10s linear  infinite;
+}
+@keyframes goocorona{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+#box2 img{
+    animation: goocorona 10s linear  infinite;
+}
+@keyframes goocorona{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+#bx-c1{background:linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);}
+#bx-c2{  background:linear-gradient(to bottom, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);;}
+#bx-c3{    background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);}
+#bx-c4{ background: linear-gradient(to bottom, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+}
+.main2{
+    background-color: #f8ffde;
+    margin-top: px;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+   
+}
+.main2 h1 samp img{
+    margin: -7px -3px;
+   height: 30px;
+   
+   
+}
+.main2 h1{
+    
+    font-size: 40px;
+    color: rgb(211, 117, 29);
+}
+.main2 img{
+    animation: goocorona 3s linear  infinite;
+}
+@keyframes goocorona{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+#w-data{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 90px;
+}
+#w-data li{
+    font-weight: bold;
+    list-style:none;
+}
+#w-data li h5{
+    color: rgb(15, 176, 240);
+    font-size:22px ;
+    font-weight: bold;
+    
+}
+#w-data li samp{
+    color: rgb(233, 21, 21);
+    font-size:20px ;
+    font-weight: bold;
+    
+}
+#about-section{
+    background-color: #f8ffde;
+    
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    
+}
+#about-section h1{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 145px;
+    margin-right: 145px;
+    font-size: 40px;
+    color: rgb(84, 148, 231);
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.content img{
+    display: inline-block;
+    
+   width: 100%;
+    
+   padding: 1px 144px;
+    
+}
+
+
+
+#Symptoms{
+   background-color: #f8ffde;
+}
+#Symptoms h2{
+    background-color: white;
+    margin-left: 145px;
+    margin-right: 145px;
+    color: rgb(243, 181, 181);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+#sm{
+  
+  
+   
+}
+#sm img{
+    display: inline-block;
+    
+   width: 100%;
+    
+   padding: 1px 144px;
+    
+    
+
+
+}
+#Prevention{
+    margin-top: 22px;
+    background-color:#f8ffde;
+}
+
+#Prevention img{
+    width: 100%;
+    padding: 1px 144px;
+    
+}
+footer{
+    text-align: center;
+    background: rgb(148, 97, 97);
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    #nav{
+       width: 100%;
+    }
+    #nav-area{
+        flex-direction: column;
+    }
+    #nav-area ul{
+        flex-direction: row;
+        margin-bottom: 6px;
+    }
+    #nav-area ul li{
+        padding: 0;
+        font-size: 10px;
+    }
+    #nav-area ul li a{
+        padding: 0px 2px;
+        font-size:14px;
+    }
+
+    .data-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main1{
+        flex-direction: column;
+    }
+    #box1 li{
+        margin: 6px;
+    }
+    #box2 li{
+        margin: 6px;
+    }
+    .about-section{
+        width: 100%;
+    }
+    
+    .content{
+        flex-direction: column;
+    }
+    .content img{
+        width: 100%;
+        padding:5px 10px;
+    }
+    .main2 h5{
+        margin: 5px 5px;
+        font-size:5px;
+    }
+    #w-data li h5{
+        color: rgb(128, 211, 128);
+        font-size:7px ;
+        font-weight: bold;
+        
+    }
+    #w-data li samp{
+        color: rgb(233, 174, 119);
+        font-size:7px ;
+        font-weight: bold;
+        
+    }
+    #sm img {
+      padding:5px 10px;  
+       width: 100%;
+        height: 250px;
+        
+    
+    }
+    #Symptoms h2{
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0;
+    margin-right: 0;
+    }
+    #Prevention img{
+        width: 100%;
+        padding:5px 5px;
+    }
+    #about-section h1{
+        font-size: 22px;
+        margin-top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main2 h1{
+        font-size: 25px;
+        
+    }
+}

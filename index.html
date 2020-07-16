@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Data</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav id="nav-area">
+                <div id="logo">
+                    <img src="img/pp.gif" alt="">
+                </div>
+                <ul>
+                    <li><a href="#data-section">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#Symptoms">Symptoms</a></li>
+                    <li><a href="#Prevention">Prevention</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section id="data-section">
+        <div class="main1">
+            <div id="logo-c">
+                <img src="img/ttt.png" alt="">
+            </div>
+            <div id="box1">
+                <li id="bx-c1">
+                    <img src="img/c.png" alt="">
+                    <samp id="aa"></samp>
+                    <p>Total Tested</p>
+                </li>
+                <li id="bx-c2">
+                    <img src="img/c.png" alt="">
+                    <samp id="ab"></samp>
+                    <p>Total Recovered</p>
+                </li>
+            </div>
+            <div id="box2">
+                <li id="bx-c3">
+                    <img src="img/c.png" alt="">
+                    <samp id="ac"></samp>
+                    <p>Total Deaths</p>
+                </li>
+                <li id="bx-c4">
+                    <img src="img/c.png" alt="">
+                    <samp id="ad"> id="p"</samp>
+                    <p>Tested Positive</p>
+                </li>
+            </div>
+        </div>
+        <div class="main2">
+            <h1>World Cor<samp><img src="img/cccc.png" alt=""></samp>naVirus Data</h1>
+            <div id="w-data">
+                <li>
+                    <samp id="ap"></samp>
+                    <h5>TotalConfirmed</h5>
+                </li>
+                <li>
+                    <samp id="bp"></samp>
+                    <h5>TotalRecovered</h5>
+                </li>
+                <li>
+                    <samp id="cp"></samp>
+                    <h5>TotalDeaths</h5>
+                </li>
+                <li>
+                    <samp id="dp"></samp>
+                    <h5>NewConfirmed</h5>
+                </li>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="about-section">
+        <h1>About CoronaVirus</h1>
+        <div class="content">
+            <img src="img/abbu.jpg" alt="">
+            
+        </div>
+    </section>
+    
+   
+    <section id="Symptoms">
+        <h2>CoronaVirus Symptoms</h2>
+        <div id="sm">
+            <img src="img/sy.jpg" alt="">
+        </div>
+
+    </section>
+    <section id="Prevention">
+        
+            <img src="img/pp.jpg" alt="">
+      
+
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy;  All right reserved! website develop by Rishu
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        fetch('https://nepalcorona.info/api/v1/data/nepal').then( ( apidata) => {
+            // console.log(apidata);
+            return apidata.json();
+        })
+        .then((actualdata)=>{
+            console.log(actualdata);
+            const mydata = (actualdata)
+            
+            document.getElementById('aa').innerHTML =(mydata).tested_total;
+            document.getElementById('ab').innerHTML =(mydata).recovered;
+            document.getElementById('ac').innerHTML =(mydata).deaths;
+            document.getElementById('ad').innerHTML =(mydata).tested_positive;
+        })
+        .catch((error) =>{
+            console.log(error);
+        })
+        
+        fetch('https://api.covid19api.com/summary').then( ( apidata) => {
+            // console.log(apidata);
+            return apidata.json();
+        })
+        .then((actualdata)=>{
+            console.log(actualdata);
+            const mydata = (actualdata.Global)
+            
+            document.getElementById('ap').innerHTML =(mydata).TotalConfirmed;
+            document.getElementById('cp').innerHTML =(mydata).TotalDeaths;
+            document.getElementById('bp').innerHTML =(mydata).TotalRecovered;
+            document.getElementById('dp').innerHTML =(mydata).NewConfirmed;
+        })
+        .catch((error) =>{
+            console.log(error);
+        })
+        
+
+       
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167241261-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167241261-1');
+</script>
+
+    
+
+</body>
+
+</html>

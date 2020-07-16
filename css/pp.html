@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container m-auto">
+        <input type="text" id="box1" >
+        <input type="password" id="box2">
+        <button onclick="my()">submet</button>
+
+    </div>
+
+
+   <script>
+       function my(){
+           var a = document.getElementById("box1").value;
+           var b = document.getElementById("box2").value;
+           if (a==""){
+               alert('Enter your name');
+           }
+           else if (b==""){
+               alert('Enter your password');
+
+
+
+           }
+           else{
+               alert('Your form will successfuly submet')
+           }
+       }
+
+   </script>
+</body>
+</html>
